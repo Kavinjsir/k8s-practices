@@ -3,7 +3,7 @@
 **(Following practices also applies to minikube; The [Official Doc](https://github.com/prometheus-operator/kube-prometheus/blob/v0.13.0/examples/minikube.jsonnet) can be an else ref.)**
 
 ```sh
-kind create cluster --config kind/config.yaml
+kind create cluster --config cluster/kind-config.yaml
 ```
 
 ## Deploy Kube-prometheus
