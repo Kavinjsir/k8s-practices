@@ -1,5 +1,7 @@
 ## Create a Kind cluster
 
+**(Following practices also applies to minikube; The [Official Doc](https://github.com/prometheus-operator/kube-prometheus/blob/v0.13.0/examples/minikube.jsonnet) can be an else ref.)**
+
 ```sh
 kind create cluster --config kind/config.yaml
 ```
@@ -87,10 +89,11 @@ k port-forward -n monitoring svc/grafana 3000
 Now, you can check `prometheus` by visiting `localhost:9090`, I recommend reviewing `/targets` and `service-discovery` routes to see how various resources are covered by the prometheus instance.
 
 Similarly, you can browse `grafana` website at `localhost:30000`, the initial account can be:
+
 ```typescript
 {
-  username: admin
-  password: admin
+  username: admin;
+  password: admin;
 }
 ```
 
